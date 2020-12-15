@@ -9,7 +9,7 @@ public class Sorts{
         if (data[i] > data[i+1]){
           int a = data[i+1];
           data[i+1] = data[i];
-          data[i] = data[i+1];
+          data[i] = a;
         }
       }
     }
