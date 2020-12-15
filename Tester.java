@@ -10,7 +10,7 @@ public class Tester{
     //   System.out.println(rng.nextInt() % 1000);
     // }
     // System.out.println();
-    int[] data = new int[10];
+    int[] data = new int[20];
     //specified seed can be used to reproduce sequences
 //seed of 100 is stored.
     for(int i =  0; i < data.length; i++ ){
