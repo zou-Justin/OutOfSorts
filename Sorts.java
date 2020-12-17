@@ -13,6 +13,13 @@ public class Sorts{
         }
       }
     }
-
   }
+  public static void selectionSort(int[] data){
+    for (int i = 0;i < data.length; i++){
+
+    }
+
+}
+
+
 }
