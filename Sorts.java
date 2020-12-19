@@ -16,17 +16,18 @@ public class Sorts{
   }
   public static void selectionSort(int[] data){
     int minimum = 0;
-    for (int i = 0;i < data.length; i++){
-      for (int j = i;j < data.length;j++){
-        minimum = data[i];
-        if (minimum > data[j]){
-          minimum = data[j]
+    for (int i = 0; i < data.length; i++){
+      minimum = data[i];
+      for (int j = i; j < data.length;j++){
+        if (data[j] < minimum){
+          int temp = data[j];
+          data[j] = minimum;
+          minimum = temp;
         }
       }
       data[i] = minimum;
     }
+  }
 
-}
-
-
+	public static void main(String[] args) {}
 }

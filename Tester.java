@@ -16,7 +16,7 @@ public class Tester{
     for(int i =  0; i < data.length; i++ ){
       data[i] = rng.nextInt() % 1000;
     }
-    Sorts.bubbleSort(data);
+    Sorts.selectionSort(data);
     System.out.println(Arrays.toString(data));
   }
 }
