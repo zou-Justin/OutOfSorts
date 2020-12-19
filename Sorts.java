@@ -28,6 +28,8 @@ public class Sorts{
       data[i] = minimum;
     }
   }
+  public static void insertionSort(int[] data){
 
-	public static void main(String[] args) {}
+    
+  }
 }
