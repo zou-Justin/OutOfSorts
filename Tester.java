@@ -1,28 +1,22 @@
+import java.util.Random;
 import java.util.Arrays;
 public class Tester{
-
   public static void main(String[]args){
-    //args 0 must be size of the Array
-    //args 1 must be "bubble" or "test" (unless you add more)
-    int[] randData = new int[Integer.parseInt(args[0])];
 
-    for(int i = 0 ; i < randData.length; i++){
-      randData[i] =(int)(Math.random()*10000);
+    //here no seed is provided, so it uses the clock as a seed
+    //this can be used to produce a random seed for a different Random object!
+    Random rng = new Random();
+    // for(int i =  0; i < 5; i++ ){
+    //   System.out.println(rng.nextInt() % 1000);
+    // }
+    // System.out.println();
+    int[] data = new int[20];
+    //specified seed can be used to reproduce sequences
+//seed of 100 is stored.
+    for(int i =  0; i < data.length; i++ ){
+      data[i] = rng.nextInt() % 1000;
     }
-
-    if(args[1].equals("selectionSort")){
-      Sorts.selectionSort(randData);
-    }
-    if(args[1].equals("test")){
-      int[] randDataBubble = Arrays.copyOf(randData,randData.length);
-      Arrays.sort(randData);
-      Sorts.selectionSort(randDataBubble);
-
-      if( Arrays.equals(randData,randDataBubble)){
-        System.out.println(" Correct!");
-      }else{
-       System.out.println("Not Correct!!!!!!!!!11oneeleven");
-      }
-    }
+    Sorts.insertionSort(data);
+    System.out.println(Arrays.toString(data));
   }
 }
