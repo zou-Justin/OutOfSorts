@@ -18,6 +18,9 @@ public class Driver{
         }
 	      // System.out.println("REPLACE THIS LINE WITH ARRAY VALUE GENERATION!");
       }else if(args[2].equals("equal")){
+        for (int i : randData){
+          randData[i] = 10;
+        }
 	      //System.out.println("REPLACE THIS LINE WITH ARRAY VALUE GENERATION!");
       }else if(args[2].equals("sorted")){
 	      //System.out.println("REPLACE THIS LINE WITH ARRAY VALUE GENERATION!");
