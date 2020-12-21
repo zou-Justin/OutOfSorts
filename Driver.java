@@ -16,13 +16,13 @@ public class Driver{
         for(int i =  0; i < randData.length; i++){
           randData[i] = rng.nextInt() % 1000;
         }
-        System.out.println(Arrays.toString(randData));
+        //System.out.println(Arrays.toString(randData));
 	      // System.out.println("REPLACE THIS LINE WITH ARRAY VALUE GENERATION!");
       }else if(args[2].equals("equal")){
         for (int i =  0; i < randData.length; i++){
           randData[i] = 10;
         }
-        System.out.println(Arrays.toString(randData));
+        //System.out.println(Arrays.toString(randData));
 	      //System.out.println("REPLACE THIS LINE WITH ARRAY VALUE GENERATION!");
       }else if(args[2].equals("sorted")){
         int count = 0;
@@ -30,7 +30,7 @@ public class Driver{
           randData[i] = count;
           count++;
         }
-        System.out.println(Arrays.toString(randData));
+        //System.out.println(Arrays.toString(randData));
 	      //System.out.println("REPLACE THIS LINE WITH ARRAY VALUE GENERATION!");
       }else if(args[2].equals("reversed")){
         int backwardsCount = randData.length * -1;
@@ -38,7 +38,7 @@ public class Driver{
           randData[i] = backwardsCount;
           backwardsCount++;
         }
-        System.out.println(Arrays.toString(randData));
+        //System.out.println(Arrays.toString(randData));
 	      //System.out.println("REPLACE THIS LINE WITH ARRAY VALUE GENERATION!");
       }
 
