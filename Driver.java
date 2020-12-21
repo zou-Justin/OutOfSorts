@@ -23,6 +23,11 @@ public class Driver{
         }
 	      //System.out.println("REPLACE THIS LINE WITH ARRAY VALUE GENERATION!");
       }else if(args[2].equals("sorted")){
+        int count = 0;
+        for (int i : randData){
+          randData[i] = count;
+          count++;
+        }
 	      //System.out.println("REPLACE THIS LINE WITH ARRAY VALUE GENERATION!");
       }else if(args[2].equals("reversed")){
 	      //System.out.println("REPLACE THIS LINE WITH ARRAY VALUE GENERATION!");
