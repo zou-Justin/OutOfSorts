@@ -29,13 +29,15 @@ public class Sorts{
     }
   }
   public static void insertionSort(int[] data){
-    for (int i = 1;i < data.length;i++){
+    int index = 0;
+    for (int i = 0;i < data.length;i++){
       int temp = data[i];
-      int index = i;
-      if (data[index-1] > temp && index >= 0){
-        data[index] = data[index-1];
+       index = i - 1;
+       while (index >= 0 && data[index] > temp ){
+        data[index+1] = data[index];
+        index--;
       }
-        data[i] = temp;
+        data[index+1] = temp;
     }
   }
 }
