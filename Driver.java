@@ -30,6 +30,11 @@ public class Driver{
         }
 	      //System.out.println("REPLACE THIS LINE WITH ARRAY VALUE GENERATION!");
       }else if(args[2].equals("reversed")){
+        int backwardsCount = randData.length * -1;
+        for (int i : randData){
+          randData[i] = backwardsCount;
+          backwardsCount++;
+        }
 	      //System.out.println("REPLACE THIS LINE WITH ARRAY VALUE GENERATION!");
       }
 
