@@ -1,18 +1,17 @@
 public class Sorts{
   public static void bubbleSort(int[] data){
-    int a = 0;
-    boolean swap = false;
+    int counter = 0;
     for (int i = 0; i < data.length-1;i++){
       for (int j = 0; j < data.length-i-1;j++){
         if (data[j] > data[j+1]){
-          a = data[j];
+          int a = data[j];
           data[j] = data[j+1];
           data[j+1] = a;
-          swap = true;
+          counter++;
         }
       }
-      if (swap = false){
-        i = data.length-2;
+      if (counter == 0){
+        i = data.length-1;
       }
     }
   }
